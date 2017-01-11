@@ -394,20 +394,6 @@ h3 {
 .section-contact {
   text-align: center; }
 
-.fblink {
-  margin-bottom: 10px;
-  width: 60px;
-  height: 60px;
-  display: block;
-  background: url("../img/fblogo.png") center top no-repeat; }
-
-.instalink {
-  margin-bottom: 10px;
-  width: 60px;
-  height: 60px;
-  display: block;
-  background: url("../img/instalogo.png") center top no-repeat; }
-
 .social-links {
   max-width: 700px;
   margin: 0px auto 50px;
@@ -472,15 +458,6 @@ h3 {
   border-top: 3px solid black;
   margin: -40px auto 50px; }
 
-.biglink {
-  display: inline-block;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 1;
-  width: 90%;
-  margin: 0 auto 50px;
-  padding: 30px; }
-
 .zwykly_tekst {
   max-width: 620px;
   padding: 0px 50px 50px;
@@ -510,3 +487,92 @@ h3 {
     height: 200px;
     background: #01FF70;
     float: left; }
+
+.cennik {
+  padding: 20px; }
+  .cennik table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1080px;
+    margin: 10px auto; }
+    .cennik table td, .cennik table th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 12px;
+      font-size: 24px; }
+    .cennik table tr:nth-child(even) {
+      background-color: #dddddd; }
+
+.socialmedia {
+  width: 100%;
+  max-width: 600px;
+  margin: 0px auto 50px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute; }
+  .socialmedia a {
+    display: block;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    display: block; }
+    .socialmedia a svg:hover #fbico {
+      fill: #3B5998;
+      transition: 200ms; }
+    .socialmedia a svg:hover #insta1 {
+      fill: #515ECF;
+      transition: 100ms; }
+    .socialmedia a svg:hover #insta2 {
+      fill: #D92E7F;
+      transition: 200ms; }
+    .socialmedia a svg:hover #insta3 {
+      fill: #FED373;
+      transition: 300ms; }
+
+.biglink {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 50px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000; }
+  .biglink svg:hover #mailto {
+    fill: #ff4f4f;
+    transition: 200ms; }
+  .biglink a:hover {
+    fill: #ff4f4f;
+    transition: 400ms; }
+
+.regulamin {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px; }
+  .regulamin ul {
+    font-size: 36px;
+    color: #000; }
+    .regulamin ul li {
+      margin: 0 auto 10px; }
