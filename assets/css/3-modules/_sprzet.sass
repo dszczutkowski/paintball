@@ -18,14 +18,16 @@
     .sprzet-overlay
       +position(absolute, 100% 0px null 0px)
       height: 100%
-      background: fade-out(#666, 0.1)
+      background: fade-out(#666, 0.2)
       text-align: center
       +transition
 
       strong
         display: block
-        padding: 15px auto
+        padding: 60px 10px 30px
         color: white
+        text-weight: 300
+        font-size: 300%
 
     &:hover .sprzet-overlay
       +position(absolute, 0% 0px null 0px)
