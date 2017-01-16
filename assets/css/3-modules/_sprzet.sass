@@ -4,9 +4,53 @@
   padding-bottom: 100px
   +clearfix
 
+
   .sprzet-unit
     display: block
-    width: 25%
-    height: 200px
+    width: 50%
+    height: 100px
     background: #01FF70
     float: left
+    position: relative
+    padding-top: 20%
+    overflow: hidden
+
+    .sprzet-overlay
+      +position(absolute, 100% 0px null 0px)
+      height: 100%
+      background: fade-out(#666, 0.1)
+      text-align: center
+      +transition
+
+      strong
+        display: block
+        padding: 15px auto
+        color: white
+
+    &:hover .sprzet-overlay
+      +position(absolute, 0% 0px null 0px)
+
+  #markery
+    background:
+      image: url("/assets/img/sprzet.jpg")
+      position: center center
+      repeat: no-repeat
+      size: cover
+  #kulki
+    background:
+      image: url("/assets/img/sprzet.jpg")
+      position: center center
+      repeat: no-repeat
+      size: cover
+  #armor
+    background:
+      image: url("/assets/img/sprzet.jpg")
+      position: center center
+      repeat: no-repeat
+      size: cover
+  #pole
+    background:
+      image: url("/assets/img/sprzet.jpg")
+      position: center center
+      repeat: no-repeat
+      size: cover
