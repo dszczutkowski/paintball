@@ -319,65 +319,83 @@ h3 {
   font-weight: 700;
   text-transform: uppercase; }
 
+body {
+  position: relative;
+  padding-top: 450px; }
+
 header {
+  position: fixed;
   height: 450px;
+  width: 100%;
+  top: 0;
   background: center center;
     background-image: url("../img/kasek.jpg");
     background-color: #ffffff;
     background-size: cover; }
-  header nav {
-    margin-top: 40px;
-    padding: 0 30px 0 0;
-    text-shadow: 0.1em 0.1em 0.8em #fff;
-    background-color: rgba(0, 0, 0, 0.6); }
-    header nav a {
-      display: inline-block;
-      margin-left: 0px;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: uppercase; }
-      header nav a:hover {
-        color: #ffd051;
-        transform: translate(0px, 1px); }
-  header h1 {
-    text-align: center;
-    text-shadow: 0.07em 0.07em #000000;
-    font-size: 72px;
-    font-weight: 700;
+
+.nav-scrolled {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  background-color: #777; }
+
+nav {
+  margin: 0;
+  position: relative;
+  background-color: #777; }
+  nav a {
+    display: inline-block;
+    margin-left: 0px;
     color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin: 0 auto 10px;
-    clear: both;
-    padding-top: 100px; }
-    header h1 span {
-      display: inline-block;
-      margin-top: 100px;
-      padding: 0.3em 2.5em;
-      border: solid 8px;
-      letter-spacing: 18px;
-      font-weight: 900;
-      background-color: rgba(0, 0, 0, 0.4); }
-      header h1 span .janikowo {
-        margin-top: 0px;
-        background-color: transparent;
-        font-weight: 100;
-        padding: 0;
-        border: none;
-        font-size: 56px;
-        letter-spacing: 10px; }
-  header .kicker {
-    text-align: center;
-    text-shadow: 0.07em 0.07em #000000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #ffffff; }
+    text-transform: uppercase; }
+    nav a:hover {
+      color: #ffd051;
+      transform: translate(0px, 1px); }
+
+h1 {
+  text-align: center;
+  text-shadow: 0.07em 0.07em #000000;
+  font-size: 72px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 auto 10px;
+  clear: both;
+  padding-top: 100px; }
+  h1 span {
+    display: inline-block;
+    margin-top: 100px;
+    padding: 0.3em 2.5em;
+    border: solid 8px;
+    letter-spacing: 18px;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.4); }
+    h1 span .janikowo {
+      margin-top: 0px;
+      background-color: transparent;
+      font-weight: 100;
+      padding: 0;
+      border: none;
+      font-size: 56px;
+      letter-spacing: 10px; }
+
+.kicker {
+  text-align: center;
+  text-shadow: 0.07em 0.07em #000000;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff; }
 
 footer {
-  height: 100px;
+  text-align: right;
+  height: 90px;
+  margin-top: -10px;
   background: center 0px;
     background-image: url("../img/kasek.jpg");
     background-color: #666666;
@@ -395,6 +413,8 @@ footer {
       text-transform: uppercase; }
       footer .lockup a:hover {
         color: #000000; }
+    footer .lockup .copyright {
+      margin: 0 auto; }
 
 .section-contact {
   text-align: center; }
@@ -459,9 +479,13 @@ footer {
     .contact-form form textarea {
       height: 10em; }
 
-section h3 {
-  letter-spacing: 5px;
-  font-weight: 700; }
+section {
+  position: relative;
+  background-color: #ffffff; }
+  section h3 {
+    margin-top: 0;
+    letter-spacing: 5px;
+    font-weight: 700; }
 
 .zwykly_tekst {
   max-width: 620px;
@@ -498,7 +522,10 @@ h3 {
 .sprzet-slider {
   width: 200%;
   position: relative;
-  left: -100%; }
+  left: 0%;
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  transition: 400ms; }
 
 .sprzet-wrap, .info-wrap {
   width: 50%;
@@ -542,7 +569,8 @@ h3 {
       position: absolute;
       top: 0%;
       right: 0px;
-      left: 0px; }
+      left: 0px;
+      cursor: pointer; }
   .sprzet-container #markery {
     background-image: url("/assets/img/sprzet.jpg");
     background-position: center center;
@@ -566,8 +594,10 @@ h3 {
 
 .info-container {
   max-width: 640px;
-  margin: 0px auto; }
+  margin: 0px auto;
+  display: none; }
   .info-container h4 {
+    margin-top: 0px;
     font-weight: 300;
     font-size: 250%;
     letter-spacing: 3px; }
@@ -586,7 +616,8 @@ h3 {
   .info-container h4 {
     margin-left: 80px; } }
 .section-cennik {
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
 
 .cennik {
   padding: 20px; }
@@ -607,7 +638,8 @@ h3 {
   position: relative;
   width: 100%;
   max-width: 600px;
-  margin: 0px auto 50px;
+  margin: 0px auto;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -664,7 +696,7 @@ a:hover {
 .section-dojazd {
   display: block; }
   .section-dojazd .mapka {
-    max-width: 600px;
+    max-width: 800px;
     margin: 10px auto;
     padding: 40px;
     text-align: center; }

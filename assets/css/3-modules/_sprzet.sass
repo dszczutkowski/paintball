@@ -4,7 +4,8 @@
 .sprzet-slider
   width: 200%
   position: relative
-  left: -100%
+  left: 0%
+  +transition(400ms)
 
 .sprzet-wrap, .info-wrap
   width: 50%
@@ -43,6 +44,7 @@
 
     &:hover .sprzet-overlay
       +position(absolute, 0% 0px null 0px)
+      cursor: pointer
 
   #markery
     background:
@@ -72,8 +74,10 @@
 .info-container
   max-width: 640px
   margin: 0px auto
+  display: none
 
   h4
+    margin-top: 0px
     font-weight: 300
     font-size: 250%
     letter-spacing: 3px
