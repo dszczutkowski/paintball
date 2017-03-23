@@ -8,26 +8,42 @@
   +display(flex)
   +justify-content(space-around)
 
+  .fblink, .instalink, .bloglink
+    margin: 2px
+    display: inline-block
+    padding: 5px
+
+  span
+    padding-top: 25px
+    text-align: center
+
   a
     text-align: center
-    display: block
-    margin-bottom: 10px
-    width: 80px
-    height: 80px
+    display: inline-block
+    width: 100px
+    height: 100px
 
-    svg:hover #fbico
-      fill: #3B5998
-      transition: 200ms
-    svg:hover #insta1
-      fill: #515ECF
-      transition: 100ms
-    svg:hover #insta2
-      fill: #D92E7F
-      transition: 200ms
-    svg:hover #insta3
-      fill: #FED373
-      transition: 300ms
+  svg
+    fill: #A3A3A3
+    transition: 200ms
 
+  svg:hover
+    transform: scale(1.05)
+    transition: 200ms
+
+  svg:hover #fbico
+    fill: #3B5998
+    transition: 300ms
+
+  svg:hover #insta1
+    fill: #515ECF
+    transition: 100ms
+  svg:hover #insta2
+    fill: #D92E7F
+    transition: 200ms
+  svg:hover #insta3
+    fill: #FED373
+    transition: 300ms
 
 a:hover
   transition: 400ms

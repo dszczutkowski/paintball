@@ -1,6 +1,7 @@
 $(function() {
     smoothScroll(800);
     slider();
+    workLoad();
 });
 
 function smoothScroll (duration) {
@@ -40,3 +41,17 @@ $(window).scroll(function() {
         mn.removeClass("nav-scrolled");
     }
 });
+
+function workLoad() {
+
+    $.ajaxSetup({cache: true});
+
+    $('.sprzet-unit').click(function() {
+        var
+        newID = this.id,
+        spinner = '<div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div></div>',
+        newHtml = "/sprzet/" + newID +".html";
+    $('.sprzet-load').html(spinner).load(newHtml);
+
+    });
+}
