@@ -812,14 +812,24 @@ a:hover {
 
 .regulamin {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 10px; }
   .regulamin ul {
-    font-size: 36px;
-    color: #000; }
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    list-style-image: url("/assets/img/paint.gif"); }
     .regulamin ul li {
-      margin: 0 auto 10px; }
+      height: 50px;
+      line-height: 50px;
+      margin: 0 auto 10px auto; }
+    .regulamin ul li.blue {
+      list-style-image: url("/assets/img/paintblue.gif"); }
+    .regulamin ul li.purple {
+      list-style-image: url("/assets/img/paintpurple.gif"); }
+    .regulamin ul li.green {
+      list-style-image: url("/assets/img/paintgreen.png"); }
 
 .section-dojazd {
   display: block; }
