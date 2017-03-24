@@ -661,22 +661,22 @@ h3 {
       left: 0px;
       cursor: pointer; }
   .sprzet-container #markery {
-    background-image: url("../img/sprzet.jpg");
+    background-image: url("./../img/sprzet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
   .sprzet-container #kulki {
-    background-image: url("../img/sprzet.jpg");
+    background-image: url("./../img/sprzet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
   .sprzet-container #armor {
-    background-image: url("../img/sprzet.jpg");
+    background-image: url("./../img/sprzet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
   .sprzet-container #pole {
-    background-image: url("../img/sprzet.jpg");
+    background-image: url("./../img/sprzet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
