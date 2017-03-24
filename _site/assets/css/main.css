@@ -661,22 +661,22 @@ h3 {
       left: 0px;
       cursor: pointer; }
   .sprzet-container #markery {
-    background-image: url("/assets/img/sprzet.jpg");
+    background-image: url("../img/sprzet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
   .sprzet-container #kulki {
-    background-image: url("/assets/img/sprzet.jpg");
+    background-image: url("../img/sprzet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
   .sprzet-container #armor {
-    background-image: url("/assets/img/sprzet.jpg");
+    background-image: url("../img/sprzet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
   .sprzet-container #pole {
-    background-image: url("/assets/img/sprzet.jpg");
+    background-image: url("../img/sprzet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -818,18 +818,17 @@ a:hover {
   .regulamin ul {
     font-size: 24px;
     font-weight: 500;
-    color: #000;
-    list-style-image: url("/assets/img/paint.gif"); }
+    color: #000; }
     .regulamin ul li {
       height: 50px;
       line-height: 50px;
       margin: 0 auto 10px auto; }
     .regulamin ul li.blue {
-      list-style-image: url("/assets/img/paintblue.gif"); }
+      list-style-image: url("../img/paintblue.gif"); }
     .regulamin ul li.purple {
-      list-style-image: url("/assets/img/paintpurple.gif"); }
+      list-style-image: url("../img/paintpurple.gif"); }
     .regulamin ul li.green {
-      list-style-image: url("/assets/img/paintgreen.png"); }
+      list-style-image: url("../img/paintgreen.png"); }
 
 .section-dojazd {
   display: block; }
