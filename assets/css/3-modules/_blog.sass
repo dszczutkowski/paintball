@@ -1,0 +1,111 @@
+.section-blog
+  .blog-belt
+    padding-bottom: 50px
+    width: 100%
+    position: relative
+
+    .blog-unit
+      background-color: white
+      display: flex
+      max-width: 700px
+      margin: 0 auto 60px
+
+      .small-title-image
+        margin: 20px
+        width: 300px
+        height: 300px
+        background:
+          image: url("./../img/sprzet.jpg")
+          position: center center
+          repeat: no-repeat
+          size: cover
+        transition: border-radius 1s, boxshadow 0.5s, transform 1s
+
+      .small-title-image:hover
+        box-shadow: black 10px 10px 30px
+        border-radius: 200%
+        transform: scale(1.05)
+
+
+      h2
+        margin: 40% auto 10px
+
+      p
+        margin: 0
+        display: inline-block
+        height: 30%
+        width: 100%
+
+      a
+        color: #A3A3A3
+        font:
+          size: 24px
+          weight: 300
+        margin: 0
+        display: inline-block
+        float: right
+
+      a:hover
+        color: $redlink
+        transform: scale(1,1)
+        transition: 300ms
+
+.blog-post
+  background-color: #ffffff
+
+.section-blog-post
+  display: block
+  max-width: 800px
+  margin: 10px auto
+  padding-left: 250px
+
+  .title-image
+    height: 300px
+    width: 800px
+    position: relative
+    display: block
+    margin: 0 auto
+    background:
+      image: url("./../img/sprzet.jpg")
+      position: center center
+      repeat: no-repeat
+      size: cover
+
+  p
+    text-align: left
+
+  h2
+    text-align: center
+
+.blog-menu
+  top: 0
+  left: 0
+  position: fixed
+  height: 100%
+  width: 250px
+  background-color: #333333
+
+  .maly-link
+    font:
+      size: 24px
+      weight: 300
+    letter-spacing: 3px
+    color: white
+    padding: 10px
+    text-align: right
+
+    &:hover
+      color: #D92E7F
+
+  .blog-icon
+    font-size: 8em
+    left: 20px
+    top: 10px
+
+    a
+      display: inline-block
+      text-align: center
+      width: 250px
+      height: 100px
+
+
